@@ -1,0 +1,92 @@
+[21-May-2016 09:11:29 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[21-May-2016 09:12:04 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[21-May-2016 09:12:10 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[21-May-2016 09:12:30 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[21-May-2016 09:12:41 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[21-May-2016 09:14:04 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 00:33:25 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 00:49:58 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 01:53:21 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 01:54:42 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 02:18:34 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 02:27:29 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 03:14:47 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 03:16:03 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/letslink/public_html/newlink/application/views/teacher/allbroadcasts.php on line 271
+[22-May-2016 03:16:06 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/letslink/public_html/newlink/application/views/teacher/allbroadcasts.php on line 271
+[22-May-2016 03:16:13 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/letslink/public_html/newlink/application/views/teacher/allbroadcasts.php on line 271
+[22-May-2016 03:16:23 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/letslink/public_html/newlink/application/views/teacher/allbroadcasts.php on line 271
+[22-May-2016 03:16:42 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 03:17:11 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/letslink/public_html/newlink/application/views/teacher/allbroadcasts.php on line 271
+[22-May-2016 03:17:30 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 03:40:11 America/Chicago] PHP Parse error:  syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/letslink/public_html/newlink/application/views/teacher/allbroadcasts.php on line 221
+[22-May-2016 03:40:15 America/Chicago] PHP Parse error:  syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM in /home/letslink/public_html/newlink/application/views/teacher/allbroadcasts.php on line 221
+[22-May-2016 03:49:20 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 03:51:21 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 04:05:03 America/Chicago] PHP Fatal error:  Call to a member function removeLocalBroadCast() on a non-object in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 348
+[22-May-2016 04:11:49 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 04:41:29 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 05:43:29 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:43:33 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:43:57 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:47:23 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:48:07 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:48:53 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:02 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:04 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:06 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:06 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:07 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:07 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:07 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:07 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:07 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:07 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:07 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:08 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:08 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:09 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:10 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:11 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:12 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:13 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:14 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:15 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:16 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:17 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:18 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:19 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:20 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:21 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:52:22 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:54:02 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:54:04 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:54:55 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:55:24 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:56:07 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:56:35 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:57:26 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 05:57:51 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 153
+[22-May-2016 06:01:26 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 06:05:13 America/Chicago] PHP Parse error:  syntax error, unexpected T_ECHO in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 154
+[22-May-2016 06:28:41 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 06:58:44 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 07:34:20 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 07:39:10 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 08:06:12 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 08:20:41 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 08:22:49 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 08:22:50 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 08:33:59 America/Chicago] PHP Parse error:  syntax error, unexpected T_STRING in /home/letslink/public_html/newlink/application/views/constants/events.xml on line 1
+[22-May-2016 18:57:16 Africa/Nairobi] PHP Fatal error:  Call to undefined function sanitize() in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 316
+[22-May-2016 18:57:22 Africa/Nairobi] PHP Fatal error:  Call to undefined function sanitize() in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 316
+[22-May-2016 18:57:34 Africa/Nairobi] PHP Fatal error:  Call to undefined function sanitize() in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 316
+[22-May-2016 19:00:32 Africa/Nairobi] PHP Fatal error:  Call to undefined function sanitize() in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 316
+[22-May-2016 19:00:36 Africa/Nairobi] PHP Fatal error:  Call to undefined function sanitize() in /home/letslink/public_html/newlink/application/controllers/Broadcasts.php on line 316
+[01-Jun-2016 17:44:27 America/Chicago] PHP Fatal error:  Cannot access empty property in /home/letslink/public_html/newlink/application/views/constants/Header.php on line 14
+[01-Jun-2016 17:44:33 America/Chicago] PHP Fatal error:  Cannot access empty property in /home/letslink/public_html/newlink/application/views/constants/Header.php on line 14
+[01-Jun-2016 17:44:45 America/Chicago] PHP Fatal error:  Cannot access empty property in /home/letslink/public_html/newlink/application/views/constants/Header.php on line 14
+[01-Jun-2016 17:45:22 America/Chicago] PHP Fatal error:  Cannot access empty property in /home/letslink/public_html/newlink/application/views/constants/Header.php on line 14
+[01-Jun-2016 17:45:32 America/Chicago] PHP Fatal error:  Cannot access empty property in /home/letslink/public_html/newlink/application/views/constants/Header.php on line 14
+[01-Jun-2016 17:46:44 America/Chicago] PHP Fatal error:  Cannot access empty property in /home/letslink/public_html/newlink/application/views/constants/Header.php on line 14
+[01-Jun-2016 17:48:58 America/Chicago] PHP Fatal error:  Cannot access empty property in /home/letslink/public_html/newlink/application/views/constants/Header.php on line 15
+[01-Jun-2016 17:49:23 America/Chicago] PHP Fatal error:  Cannot access empty property in /home/letslink/public_html/newlink/application/views/constants/Header.php on line 15
