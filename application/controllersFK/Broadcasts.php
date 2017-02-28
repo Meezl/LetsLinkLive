@@ -10,7 +10,7 @@ class Broadcasts extends CI_Controller {
 	{
 		parent:: __construct();
 		$this->load->helper(array('form', 'url'));
-		
+
 		$this->load->library('form_validation');
 		$this->load->library('email');
 		$this->load->model(array('Userdetails_model', 'Broadcasts_model'));
@@ -261,6 +261,7 @@ else
 		$session = $this->session->userdata('logged_in');
 		$validuser = $this->Userdetails_model->validuser();
 		$data['username'] = $this->session->userdata('username');
+
 	
 		if($session==1 && $validuser==1)
 		{	

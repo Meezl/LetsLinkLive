@@ -249,9 +249,9 @@ function rm(nm, id){
 
 						$status = $class->status;
 
-            $userId = $class->user_id;
+                        $userId = $class->user_id;
 
-            $isTeacher = 1;*/
+                        $isTeacher = 1;*/
 
 					
 

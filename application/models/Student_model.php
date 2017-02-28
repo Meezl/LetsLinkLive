@@ -2,7 +2,7 @@
 
 class Student_model extends CI_Model {
 
-	
+	public $details = array();
 
 	function __construct(){
 
@@ -12,12 +12,13 @@ class Student_model extends CI_Model {
 
 	
 
+    public function getStudentDetails(){
+	    return $this->details;
+    }
+
 	function checkStudent($email)
 
 	{
-
-		
-
 		$this -> db -> select('students.*');
 
 		$this -> db -> from('students');
@@ -35,7 +36,7 @@ class Student_model extends CI_Model {
 		if($query -> num_rows() == 1)
 
 		{
-
+            $this->details = $query->result();
 			return $query->result();
 
 		}
