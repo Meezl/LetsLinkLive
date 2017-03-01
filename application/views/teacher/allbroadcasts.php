@@ -274,7 +274,7 @@ function rm(nm, id){
                 
                 <?php  
                 
-                foreach ($classes ->result() as $class){?>
+                foreach ($classes->result() as $class){?>
                 
                 <tr>
                     
@@ -286,7 +286,7 @@ function rm(nm, id){
 
                        <td>
 
-                      <a href="javascript:void(0);" onclick="launch('<?php echo $class->class_id; ?>','<?php echo $class->class_id; ?>','<?php echo $username; ?>','<?php echo 1; ?>','<?php echo $class->title; ?>','<?php echo $class->title; ?>');">
+                      <a href="javascript:void(0);" onclick="launch('<?php echo $class->class_id; ?>','<?php echo $class->user_id; ?>','<?php echo $username; ?>','<?php echo 1; ?>','<?php echo $class->title; ?>','<?php echo $class->title; ?>');">
 
                     <span class="btn btn-success"><span class="fa fa-check"></span>&nbsp;Launch</span></a>
 		     

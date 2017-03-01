@@ -628,7 +628,8 @@ $(document).ready(function() {
 
 				}
 
-			},//END OF name
+			},
+            //END OF name
 
 			date : {
 

@@ -35,7 +35,7 @@ class Student extends CI_Controller {
 			$name = $details['name'];
 			$type = $details['type'];
 
-			$data = array('id' => $id,
+			$data['details'] = array('id' => $id,
 					'email' => $email,
 					'name' => $name,
 					'type' => $type);
@@ -125,7 +125,7 @@ class Student extends CI_Controller {
 			$name = $login['name'];
 			$type = $login['type'];
 
-			$data = array('id' => $id,
+			$data['details'] = array('id' => $id,
 					'email' => $email,
 					'name' => $name,
 					'type' => $type);

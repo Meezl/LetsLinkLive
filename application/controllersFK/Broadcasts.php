@@ -33,6 +33,17 @@ class Broadcasts extends CI_Controller {
 			$this->load->view('teacher/allbroadcasts');
 			$this->load->view('constants/Footer');*/
 
+            $login = $this->session->userdata('logged_in');
+            $id = $login['id'];
+            $email = $login['email'];
+            $name = $login['name'];
+            $type = $login['type'];
+
+            $data['details'] = array('id' => $id,
+                'email' => $email,
+                'name' => $name,
+                'type' => $type);
+
 			$postdata = array('task' => 'listclass', 'limit' => 100);
 
 			$result = $this -> sendHttpRequest($postdata);
