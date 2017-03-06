@@ -3,7 +3,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Student extends CI_Controller {
 
-
+	/**
+	 * Index Page for this controller.
+	 *
+	 * Maps to the following URL
+	 * 		http://example.com/index.php/welcome
+	 *	- or -
+	 * 		http://example.com/index.php/welcome/index
+	 *	- or -
+	 * Since this controller is set as the default controller in
+	 * config/routes.php, it's displayed at http://example.com/
+	 *
+	 * So any other public methods not prefixed with an underscore will
+	 * map to /index.php/welcome/<method_name>
+	 * @see http://codeigniter.com/user_guide/general/urls.html
+	 */
 
 	private $api_key = "boqALCaBPWk6cSfhOkth";
 	private $apiendpoint = "https://api.braincert.com/v1";
@@ -29,13 +43,13 @@ class Student extends CI_Controller {
 
 		if ($this->session->userdata('logged_in')) 
 		{
-			$details = $this->Student_model->getStudentDetails();
-			$id = $details['id'];
-			$email = $details['email'];
-			$name = $details['name'];
-			$type = $details['type'];
+			$login=$this->session->userdata('logged_in');
+			$id = $login['id'];
+			$email = $login['email'];
+			$name = $login['name'];
+			$type = $login['type'];
 
-			$data['details'] = array('id' => $id,
+			$data = array('id' => $id,
 					'email' => $email,
 					'name' => $name,
 					'type' => $type);
@@ -43,10 +57,18 @@ class Student extends CI_Controller {
 			if ($type == 2) 
 			{
 
+				/*$searchvalue = $this->input->post('search');
+				// load view
+				$broadcastArray['broadcasts'] = $this->Student_model->get_broadcast_list($searchvalue);
+
+
+				$this->load->view('constants/studentHeader', $data);
+				$this->load->view('Students/Dashboard', $broadcastArray);
+				$this->load->view('constants/Footer');*/
 
 				$postdata = array('task' => 'listclass', 'limit' => 100);
 
-				$result = $this->sendHttpRequest($postdata);
+				$result = $this -> sendHttpRequest($postdata);
 
 				$resultJson = json_decode($result);
 
@@ -55,6 +77,8 @@ class Student extends CI_Controller {
 				$data['total'] = $total;
 
 				$data['classes'] = $resultJson->classes;
+				/*$data['user_id'] = $resultJson->classes[1]['user_id'];
+				$data['title'] = $resultJson->classes[1]['title'];*/
 
 
 				$this->load->view('constants/studentHeader', $data);
@@ -125,7 +149,7 @@ class Student extends CI_Controller {
 			$name = $login['name'];
 			$type = $login['type'];
 
-			$data['details'] = array('id' => $id,
+			$data = array('id' => $id,
 					'email' => $email,
 					'name' => $name,
 					'type' => $type);
@@ -141,7 +165,7 @@ class Student extends CI_Controller {
 				'courseName' => $courseName
 				 );
 
-				$result = $this->sendHttpRequest($data);
+				$result = $this -> sendHttpRequest($data);
 
 				$resultJson = json_decode($result);
 

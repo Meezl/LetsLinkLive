@@ -233,11 +233,14 @@ function book(class_id, title, date, start_time, end_time, status){
                         $end_time = $class->end_time;
 
                         $description = $class->description;
-                        $name = $details['name'];
+
                         $status = $class->status;
-                        $userId = $details['id'];
-                        $isTeacher = 0;
+                        $name = $details['name'];
+	                $isTeacher = 0;
+	                $userId = $details['id'];
                     ?>
+                    
+
                 
 
                 <tr>

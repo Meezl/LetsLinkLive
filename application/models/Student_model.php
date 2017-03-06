@@ -9,16 +9,19 @@ class Student_model extends CI_Model {
 		parent::__construct();
 
 	}
+	
+	public function getStudentDetails(){
+	    return $this->details;
+    	}
 
 	
-
-    public function getStudentDetails(){
-	    return $this->details;
-    }
 
 	function checkStudent($email)
 
 	{
+
+		
+
 		$this -> db -> select('students.*');
 
 		$this -> db -> from('students');
@@ -36,7 +39,7 @@ class Student_model extends CI_Model {
 		if($query -> num_rows() == 1)
 
 		{
-            $this->details = $query->result();
+			$this->details = $query->result();
 			return $query->result();
 
 		}

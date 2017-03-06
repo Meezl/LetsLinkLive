@@ -50,8 +50,8 @@ a, a:hover, a:active{ outline:0px !important}
 /* Primary Styles
 ---------------------------------*/
 body {
-	background:#b7fba6;
-	font-family: 'Quango';
+	background:#e2fcca;
+	font-family: 'Arial';
 	font-size:14px;
 	font-weight:normal;
 	color:#000;
@@ -93,7 +93,7 @@ p{
 
 .header{
 	text-align:center;
-	background:url(../img/pw_maze_black_2X.png) left top repeat;
+	background:url(../img/FINAL.jpg) center;
 	padding:180px 0;
 }
 .logo{
@@ -174,7 +174,7 @@ color: #fff;
 	border-bottom:2px solid #ffffff;
 	box-shadow:0 4px 5px -3px #ececec;
 	position:relative;
-	background:#ffffff;
+	background:#47da1a;
 }
 .main-nav{
 	text-align:center;
@@ -237,7 +237,7 @@ color: #fff;
 	overflow:hidden;	
 }
 .main-section.alabaster{
-	background:#ffffff;
+	background:#e2fbde;
 }
 
 /* Featured Work

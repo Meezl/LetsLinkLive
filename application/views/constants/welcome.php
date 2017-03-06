@@ -44,16 +44,16 @@ $today = substr($today, 8, 2);
     	<figure style="margin-bottom: 35px" class=" animated fadeInDown delay-07s">
         	<a href="#"><img src="<?php echo base_url(); ?>assets/img/LLL_logo.png" alt=""></a>	
         </figure>	
-        <h1 class="animated fadeInDown delay-07s">Welcome To Lets Link Live</h1>
+        <h1 class="animated fadeInDown delay-07s"></h1>
         <ul class="we-create animated fadeInUp delay-1s">
-        	<li>Expanding the boundaries of traditional leraning...</li>
+        	<li></li>
         </ul>
     </div>
 </div>
 </header><!--header-end-->
 
 
-<nav class="main-nav-outer" ><!--main-nav-start-->
+<nav class="main-nav-outer" id="test"><!--main-nav-start-->
 	<div class="container">
         <ul class="main-nav">
             <li><a href="#header">Home</a></li>
@@ -299,8 +299,6 @@ $today = substr($today, 8, 2);
         </div>
     	<ul class="client wow fadeIn delay-05s">
         	<li><a href="#">
-            	<img src="<?php echo base_url(); ?>assets/img/client-pic1.jpg" alt="">
-            	<h2>
                 <h3>Irving Newman</h3>
                 <span>MEDF Inc.</span>
             </a></li>
@@ -326,7 +324,7 @@ $today = substr($today, 8, 2);
             <div class="team-leader-box">
                 <div class="team-leader wow fadeInDown delay-03s"> 
                     <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="<?php echo base_url(); ?>assets/img/team-leader-pic1.jpg" alt="">
+                    <img src="<?php echo base_url(); ?>assets/img/irving2.jpg" alt="">
                     <ul>
                         <li><a href="#" class="fa-twitter"></a></li>
                         <li><a href="#" class="fa-facebook"></a></li>
@@ -335,13 +333,13 @@ $today = substr($today, 8, 2);
                     </ul>
                 </div>
                 <h3 class="wow fadeInDown delay-03s">Irving Newman</h3>
-                <span class="wow fadeInDown delay-03s">Founder and Director MEDF</span>
-                <p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+                <span class="wow fadeInDown delay-03s">Co-Founder Lets Link Live</span>
+                <p class="wow fadeInDown delay-03s">Graduate Dalhousie University. <br> Lifetime Entrepreneur. <br>Founder and Executive Director MEDF</p>
             </div>
             <div class="team-leader-box">
                 <div class="team-leader  wow fadeInDown delay-06s"> 
                     <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="<?php echo base_url(); ?>assets/img/team-leader-pic2.jpg" alt="">
+                    <img src="<?php echo base_url(); ?>assets/img/Mike2.jpg" alt="">
                     <ul>
                         <li><a href="#" class="fa-twitter"></a></li>
                         <li><a href="#" class="fa-facebook"></a></li>
@@ -351,12 +349,13 @@ $today = substr($today, 8, 2);
                 </div>
                 <h3 class="wow fadeInDown delay-06s">Michael N. Kaburi</h3>
                 <span class="wow fadeInDown delay-06s">Project Manager MEDF</span>
-                <p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+                <p class="wow fadeInDown delay-06s">Graduate Moi University. <br>
+Skype Educator (MEDF) <br>Mitahato Education & Development Fund .</p>
             </div>
             <div class="team-leader-box">
                 <div class="team-leader wow fadeInDown delay-09s"> 
                     <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="<?php echo base_url(); ?>assets/img/team-leader-pic3.jpg" alt="">
+                    <img src="<?php echo base_url(); ?>assets/img/amanda.jpg" alt="">
                     <ul>
                         <li><a href="#" class="fa-twitter"></a></li>
                         <li><a href="#" class="fa-facebook"></a></li>
@@ -364,9 +363,11 @@ $today = substr($today, 8, 2);
                         <li><a href="#" class="fa-google-plus"></a></li>
                     </ul>
                 </div>
-                <h3 class="wow fadeInDown delay-09s">Pithon Kamau</h3>
-                <span class="wow fadeInDown delay-09s">Web Developer</span>
-                <p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+                <h3 class="wow fadeInDown delay-09s">Amanda Newman</h3>
+                <span class="wow fadeInDown delay-09s">Co-Founder Lets Link Live.com </span>
+                <p class="wow fadeInDown delay-09s">Co-Founder Parkbench.com <br> Chosen as a Google 500 startup company.
+<br> For more info visit: www.parkbench.com
+</p>
             </div>
         </div>
     </div>
@@ -398,7 +399,7 @@ $today = substr($today, 8, 2);
                 </div>
             	<div class="contact-info-box hours clearfix">
                 	<h3><i class="fa-clock-o"></i>Hours:</h3>
-                	<span><strong>Monday - Thursday:</strong> 8am - 6pm<br><strong>Friday:</strong>9am - 4pm<br><strong>Saturday - Sunday:</strong> Best not to ask.</span>
+                	<span><strong>Monday - Thursday:</strong> 8am - 6pm<br><strong>Friday:</strong> 9am - 4pm<br><strong>Saturday - Sunday:</strong> Best not to ask.</span>
                 </div>
                 <ul class="social-link">
                 	<li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li>
@@ -503,7 +504,7 @@ $today = substr($today, 8, 2);
 <footer class="footer">
     <div class="container">
         <div class="footer-logo"><img src="<?php echo base_url(); ?>assets/img/LLL_logo.png" alt=""></div>
-        <span class="copyright">Copyright © 2016 | Designed by <a href="#">Meezinc</a>.</span>
+        <span class="copyright"><?php echo "Copyright &copy;"."  ".date('Y');?> <a href="http://www.mitahatoedf.com/">MEDF</a>.</span>
     </div>
     
 </footer>

@@ -10,7 +10,7 @@ class Broadcasts extends CI_Controller {
 	{
 		parent:: __construct();
 		$this->load->helper(array('form', 'url'));
-
+		
 		$this->load->library('form_validation');
 		$this->load->library('email');
 		$this->load->model(array('Userdetails_model', 'Broadcasts_model'));
@@ -32,17 +32,6 @@ class Broadcasts extends CI_Controller {
 			$this->load->view('constants/Header', $data);
 			$this->load->view('teacher/allbroadcasts');
 			$this->load->view('constants/Footer');*/
-
-            $login = $this->session->userdata('logged_in');
-            $id = $login['id'];
-            $email = $login['email'];
-            $name = $login['name'];
-            $type = $login['type'];
-
-            $data['details'] = array('id' => $id,
-                'email' => $email,
-                'name' => $name,
-                'type' => $type);
 
 			$postdata = array('task' => 'listclass', 'limit' => 100);
 
@@ -272,7 +261,6 @@ else
 		$session = $this->session->userdata('logged_in');
 		$validuser = $this->Userdetails_model->validuser();
 		$data['username'] = $this->session->userdata('username');
-
 	
 		if($session==1 && $validuser==1)
 		{	

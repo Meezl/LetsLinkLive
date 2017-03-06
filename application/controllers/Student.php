@@ -3,9 +3,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Student extends CI_Controller {
 
+	/**
+	 * Index Page for this controller.
+	 *
+	 * Maps to the following URL
+	 * 		http://example.com/index.php/welcome
+	 *	- or -
+	 * 		http://example.com/index.php/welcome/index
+	 *	- or -
+	 * Since this controller is set as the default controller in
+	 * config/routes.php, it's displayed at http://example.com/
+	 *
+	 * So any other public methods not prefixed with an underscore will
+	 * map to /index.php/welcome/<method_name>
+	 * @see http://codeigniter.com/user_guide/general/urls.html
+	 */
 
-	private $api_key = "boqALCaBPWk6cSfhOkth";
-	private $apiendpoint = "https://api.braincert.com/v1";
+	private $api_key = "gqcbUVjRwWjIarkpwA2l";
+	private $apiendpoint = "https://api.braincert.com/v2";
 
 	function __construct()
 	{
@@ -34,10 +49,12 @@ class Student extends CI_Controller {
 			$name = $login['name'];
 			$type = $login['type'];
 
-			$data = array('id' => $id,
+			$data['details'] = array('id' => $id,
 					'email' => $email,
 					'name' => $name,
 					'type' => $type);
+					
+					
 
 			if ($type == 2) 
 			{
@@ -52,10 +69,12 @@ class Student extends CI_Controller {
 				$this->load->view('constants/Footer');*/
 
 				$postdata = array('task' => 'listclass', 'limit' => 100);
+				
 
 				$result = $this -> sendHttpRequest($postdata);
 
 				$resultJson = json_decode($result);
+				
 
 				$total = $resultJson->total;
 
@@ -150,8 +169,8 @@ class Student extends CI_Controller {
 				'courseName' => $courseName
 				 );
 
-				$result = $this -> sendHttpRequest($data);
-
+				$result = $this ->sendHttpRequest($data);
+				
 				$resultJson = json_decode($result);
 
 				$status = $resultJson->status;

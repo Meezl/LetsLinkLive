@@ -90,3 +90,8 @@
 [01-Jun-2016 17:46:44 America/Chicago] PHP Fatal error:  Cannot access empty property in /home/letslink/public_html/newlink/application/views/constants/Header.php on line 14
 [01-Jun-2016 17:48:58 America/Chicago] PHP Fatal error:  Cannot access empty property in /home/letslink/public_html/newlink/application/views/constants/Header.php on line 15
 [01-Jun-2016 17:49:23 America/Chicago] PHP Fatal error:  Cannot access empty property in /home/letslink/public_html/newlink/application/views/constants/Header.php on line 15
+[30-Nov-2016 13:00:40 America/Chicago] PHP Fatal error:  Call to a member function result() on a non-object in /home/letslink/public_html/newlink/application/views/Students/Dashboard.php on line 223
+[30-Nov-2016 13:00:46 America/Chicago] PHP Fatal error:  Call to a member function result() on a non-object in /home/letslink/public_html/newlink/application/views/Students/Dashboard.php on line 223
+[01-Mar-2017 00:47:37 America/Chicago] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::resutlt() in /home/letslink/public_html/newlink/application/views/teacher/allbroadcasts.php on line 277
+[01-Mar-2017 01:23:36 America/Chicago] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in /home/letslink/public_html/newlink/application/views/constants/welcome.php on line 507
+[01-Mar-2017 01:23:43 America/Chicago] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in /home/letslink/public_html/newlink/application/views/constants/welcome.php on line 507
