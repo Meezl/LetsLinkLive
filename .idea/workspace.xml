@@ -669,6 +669,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Meezl &lt;hashim4580@gmail.cpmom&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -957,7 +962,7 @@
       <workItem from="1488347692325" duration="4506000" />
       <workItem from="1488356291454" duration="1470000" />
       <workItem from="1488548235894" duration="661000" />
-      <workItem from="1488786614364" duration="97000" />
+      <workItem from="1488786614364" duration="698000" />
     </task>
     <task id="LOCAL-00001" summary="user ID correction">
       <created>1488286332672</created>
@@ -977,7 +982,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26041000" />
+    <option name="totallyTimeSpent" value="26642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1011,7 +1016,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="user ID correction" />
     <MESSAGE value="corrections students broadcasts" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrections students broadcasts" />
+    <MESSAGE value="Merging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
