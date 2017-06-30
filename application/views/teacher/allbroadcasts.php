@@ -110,149 +110,56 @@ function rm(nm, id){
         <section class="content-header">
 
           <h1>
-
             All Broadcasts
-
-            
-
           </h1>
 
-          
-
         </section>
-
-
-
-
-
-
-
 <section class="content">
-
 <div class="row">
-
             <div class="col-xs-12">
-
               <div class="box">
-
                 <div class="box-header">
-
                   <h3 class="box-title">All Broadcasts</h3>
-
                   <div class="box-tools">
-
                     <div class="input-group" style="width: 150px;">
-
-                      
-
-
-
                       <!--<form name="search" method="post" action="">
-
                     <div class="input-group custom-search-form">
-
                       <input type="text" id="search" name="search" class="form-control input-sm pull-right" placeholder="Search...">
-
                       <span class="input-group-btn">
-
-                        
-
-                     </span>
-
+                       </span>
                     </div>
-
                   </form>-->
-
-
-
-
-
-                      
-
-                     
-
                     </div>
-
                   </div>
-
                 </div><!-- /.box-header -->
-
                 <div class="box-body table-responsive no-padding">
-
                 	<?php
-
 					if($total==0)
-
 					{
-
 						echo "No broadcasts";
-
 					}
-
 					else
-
 					{
 
 						//echo $total." broadcasts found";
 
 					?>
-
-                    
-
                   <table class="table table-hover">
-
                     <tr>
-
                       <th>Class Id</th>
-
                       <th>Title</th>
-
                       <th>Date</th>
-
                       <th>Start Time</th>
-
                       <th>End Time</th>
-
-                      
-
                       <th>Action</th>
-
-                      
-
                     </tr>
-
-
-
-               
-
-
-
-                    
-
-                    <?php  
-
+                    <?php
                 	/*foreach(braincerts as braincert)
                 	{
                 		$userId = $braincert->user_id;
-
-            			
                 	}*/
-                	
-                	$username = $this->session->userdata('username');			
-
+                	$username = $this->session->userdata('username');
 					?>
-
-                
-
-           
-                
-                
-                
-                
-                
-                
-   
-                
                 <?php  
                 
                 foreach ($classes->result() as $class) {
@@ -271,9 +178,7 @@ function rm(nm, id){
                       <a href="javascript:void(0);" onclick="launch('<?php echo $class->class_id; ?>','<?php echo $class->id; ?>','<?php echo $username; ?>','<?php echo 1; ?>','<?php echo $class->title; ?>','<?php echo $class->title; ?>');">
 
                     <span class="btn btn-success"><span class="fa fa-check"></span>&nbsp;Launch</span></a>
-		     
-		     
-		     
+
 		     
                     <a href="javascript:void(0);" onclick="rm('<?php echo $class->title; ?>', '<?php echo $class->class_id; ?>');">
 
@@ -284,40 +189,8 @@ function rm(nm, id){
 		   <span class="glyphicon glyphicon-pencil"></span>&nbsp;Reschedule</span>  
 
                     </td>
-
-                  	
-                                    
-                    
-                    
                 </tr>
                     <?php } ?>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-
-                  
-
-
-
-
-
-
 
                   </table>
 

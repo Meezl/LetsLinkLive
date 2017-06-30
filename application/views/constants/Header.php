@@ -138,6 +138,7 @@ foreach($userdetails as $row)
 
     <link href="<?php echo base_url('assets/css/datepicker3.min.css'); ?>" rel="stylesheet">
 
+
      <script src="<?php echo base_url('assets/js/bootstrap-datepicker.min.js'); ?>"></script>
 
      
@@ -145,7 +146,6 @@ foreach($userdetails as $row)
      <link href="<?php echo base_url('assets/css/bootstrap-timepicker.min.css'); ?>" rel="stylesheet">
 
      <script src="<?php echo base_url('assets/js/bootstrap-timepicker.min.js'); ?>"></script>
-
 
 
     <script type="text/javascript">
@@ -327,7 +327,7 @@ function changephoto(){
 <!--REPLACED #357ca5 with #7ca729-->
 
 
-
+      <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css'); ?>">
   </head>
 
   <body class="hold-transition skin-blue sidebar-mini">
@@ -676,11 +676,18 @@ function changephoto(){
 
             </li>
 
-            
 
-            
-
-         
+              <li class="treeview">
+                  <a href="#">
+                      <i style="color:#0093af" class="fa fa-book"></i>
+                      <span>Resource Library</span>
+                      <i class="fa fa-angle-left pull-right"></i>
+                  </a>
+                  <ul class="treeview-menu">
+                      <li><a href="<?php echo base_url(); ?>Resources/"><i style="color:#f39c12" class="fa fa-circle-o"></i> View Resources </a></li>
+                      <li><a href="<?php echo base_url(); ?>Resources/add"><i style="color:#0093af" class="fa fa-circle-o"></i> Add Resources </a></li>
+                  </ul>
+              </li>
 
           </ul>
 

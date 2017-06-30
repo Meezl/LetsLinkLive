@@ -1,10 +1,4 @@
-﻿<?php    
-$datevariable = new DateTime();
-$today = date_format($datevariable, 'Y-m-d');
-$today = substr($today, 8, 2);
-?>
-
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -33,7 +27,6 @@ $today = substr($today, 8, 2);
 
 <link href="<?php echo base_url(); ?>assets/calendar/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
 <link href="<?php echo base_url(); ?>assets/calendar/css/fullcalendar.min.css" type="text/css" rel="stylesheet" />
-    
     
 
 </head>
@@ -148,7 +141,10 @@ $today = substr($today, 8, 2);
                                     
                                     <h4 id="modalTitle" class="modal-title"></h4>
                                 </div>
-                                <div id="modalBody" class="modal-body"></div>
+                                <div id="modalBody" class="modal-body">
+                                    <h3>Class Description</h3>
+                                    <p></p>
+                                </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     <a href="" class="btn btn-default" data-toggle="modal" data-target="#studentLogin">Student Login</a>
@@ -422,12 +418,6 @@ Skype Educator (MEDF) <br>Mitahato Education & Development Fund .</p>
 </div>
 
 
-
-
-
-
-
-
   <div id="studentLogin" class="modal fade" style="">
           <div class="modal-dialog">
               <div class="modal-content">
@@ -477,7 +467,7 @@ Skype Educator (MEDF) <br>Mitahato Education & Development Fund .</p>
       </div>
 
  <div id="resource" class="modal fade" style="">
- <div class="modal-dialog">
+        <div class="modal-dialog">
               <div class="modal-content">
                   <div class="modal-header" style="color:#00000">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -486,11 +476,57 @@ Skype Educator (MEDF) <br>Mitahato Education & Development Fund .</p>
                   <div class="modal-body" >
                    <p>Please Login or Sign up as a student to Access Resources<br> Thank You</p>
                    </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>    
+            <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
+</div>
+
+<div id="manual" class="modal fade" style="">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="color:#00000">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">LETS LINK LIVE USER MANUAL</h4>
+            </div>
+            <div class="modal-body" >
+                <p>
+                <h3><u>How to use Let's Link Live as a Student/Teacher:</u></h3>
+                <h3><u>As a Student:</u></h3>
+                &diams;First, go to <b>sign up as student</b> and create a User account: <br>
+                &rsaquo;Sign in under <b>student sign-in</b> and go to all broadcasts (classes). <br>
+                &rsaquo;Select the desired class and <b>Click Book</b>. You will receive email confirmation for booking. <br>
+                &rsaquo;On the day & time of the class <b>Click launch</b> <br>
+                &rsaquo;To start the class Click on the text <b>"Click here to join class"</b>  & connect with the teach & other students.<br>
+                &rsaquo;<b>Enable, the microphone, video & chat icons</b>
+                </p>
+                <p>
+                <h3><u>To Connect as a Teacher</u></h3>
+                &diams;First, go to <b>teacher Sign up</b>  and create a Teacher User account: <br>
+                &rsaquo;Fill in your profile details <br>
+                &rsaquo;Sign in under <b>teacher sign-in</b> and go to create broadcast (classes). <br>
+                &rsaquo;Input, title, description & start & end time of class <br>
+                &rsaquo;<b>Most important:</b> Select your Country  time zone  i.e GMT+3 Nairobi for Kenya. <br>
+                &rsaquo;Choose the maximum number of attendees. Currently the max is 20. <br>
+                &rsaquo;Click <b>create broadcast</b> to finish. You will receive email confirmation.
+                </p>
+                <p>
+                <h3><u>To Start a class:</u></h3>
+                &rsaquo;On the day/time of the class, sign in and click <b>launch</b> <br>
+                &rsaquo;To start the class Click on the text <b>"Click here to join class"</b> to connect to students <br>
+                &rsaquo;<b>Enable the microphone, the chat and video.</b> <br>
+                &rsaquo;You can now see chat, talk & chat with all attendees. <br>
+                &rsaquo;Other features: video sharing, screen sharing, whiteboard, document sharing
+                </p>
+
+            </div>
+            <div class="modal-footer">
+                <a href="/assets/files/LETS_LINK_LIVE_USER_MANUAL.pdf" download ="LETS_LINK_LIVE_USER_MANUAL.pdf" type="button" class="btn btn-success" >Download Full Manual</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -902,6 +938,7 @@ $(document).ready(function() {
 				   {
 					   $title = $row->title;
 					   $starttime = $row->starttime;
+					   $description = $row->description;
 					   $classdate = $row->classdate;
 					   $endtime = $row->endtime; 
 					   $day = substr($classdate, 8, 2); 
@@ -911,24 +948,12 @@ $(document).ready(function() {
 					{
                       "title":"<?php echo $title.' ('.$classdate.')' ?>",
                       "allday":"false",
-                      "description":"<p>This class will take place on <?php echo $classdate ?>, starting from <?php echo $starttime ?> to <?php echo $endtime ?>.</p>",
-                      "start":moment().subtract('days',<?php echo $day ?>),
-                      "end":moment().subtract('days',<?php echo $day ?>),
+                      "description":"<p>This class is about: <br> <?=$description;?> <br> and will take place on <?php echo $classdate ?>, starting from <? echo $starttime; ?> to <?php echo $endtime; ?>.</p>",
+                      "start":moment().format('<?php echo $classdate ?>'),
                       "url":"<?php echo base_url() ?>"
                    },
 						
-				   <?php
-				   }
-				   ?>
-				   				   
-                   {
-                      "title":"",
-                      "allday":"false",
-                      "description":"",
-                      "start":moment().add('days',27),
-                      "end":moment().add('days',27),
-                      "url":""
-                   }
+				   <?php }?>
                 ]
             });
         });

@@ -505,6 +505,20 @@ $(document).ready(function() {
 
             </li>
 
+
+
+
+              <li class="treeview">
+                  <a href="#">
+                      <i style="color:#0093af" class="fa fa-book"></i>
+                      <span>Resource Library</span>
+                      <i class="fa fa-angle-left pull-right"></i>
+                  </a>
+                  <ul class="treeview-menu">
+                      <li><a href="<?php echo base_url(); ?>Resources/"><i style="color:#f39c12" class="fa fa-circle-o"></i> View Resources </a></li>
+                  </ul>
+              </li>
+
             
 
             

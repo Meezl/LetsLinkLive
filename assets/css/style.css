@@ -237,7 +237,7 @@ color: #fff;
 	overflow:hidden;	
 }
 .main-section.alabaster{
-	background:#e2fbde;
+	background:#47da1a;
 }
 
 /* Featured Work
@@ -460,7 +460,7 @@ border: 2px solid #fff;
 }
 
 .c-logo-part{
-	background:#7cc576;
+	background:#47da1a;
 	padding:25px 0;
     filter: alpha(opacity=60);
 }
@@ -833,5 +833,10 @@ border: 2px solid #fff;
 	animation-delay: 1.2s; 
 	-webkit-animation-delay: 1.2s; 
 }
+/* custom */
 
-
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+	color: #fff;
+	background-color: #47b11e;
+	border-color: #47b11e;
+}

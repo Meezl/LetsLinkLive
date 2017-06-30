@@ -83,6 +83,14 @@ switch (ENVIRONMENT)
 		}
 	break;
 
+  /* case 'hashim':
+        define('DB_USERNAME', 'homestead');
+        define('DB_PASSWORD', 'secret');
+        define('HOSTNAME', 'localhost');
+        define('DB_NAME', 'letslink_letslinklive');
+        error_reporting(E_ALL & ~E_DEPRECATED);
+        break;*/
+
 	default:
 		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
 		echo 'The application environment is not set correctly.';

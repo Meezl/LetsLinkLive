@@ -121,54 +121,11 @@ function book(class_id, title, date, start_time, end_time, status){
             <div class="col-xs-12">
 
               <div class="box">
-
-                <div class="box-header">
-
-                  <h3 class="box-title">All Broadcasts</h3>
-
-                  <div class="box-tools">
-
-                    <div class="input-group" style="width: 150px;">
-
-                      
-
-
-
-                      <!--<form name="search" method="post" action="">
-
-                    <div class="input-group custom-search-form">
-
-                      <input type="text" id="search" name="search" class="form-control input-sm pull-right" placeholder="Search...">
-
-                      <span class="input-group-btn">
-
-                        
-
-                     </span>
-
-                    </div>
-
-                  </form>-->
-
-
-
-
-
-                      
-
-                     
-
-                    </div>
-
-                  </div>
-
-                </div><!-- /.box-header -->
-
                 <div class="box-body table-responsive no-padding">
 
                     <?php
 
-                    if($total==0)
+                    if( $total == 0 )
 
                     {
 
@@ -180,7 +137,7 @@ function book(class_id, title, date, start_time, end_time, status){
 
                     {
 
-                        echo $total." broadcasts found";
+                       // echo $total." broadcasts found";
 
                     ?>
 
@@ -239,10 +196,10 @@ function book(class_id, title, date, start_time, end_time, status){
 	                $isTeacher = 0;
 	                $userId = $details['id'];
                     ?>
-                    
 
-                
 
+
+                <?php if($status == "Upcoming"): ?>
                 <tr>
 
                     <td><?php echo $id; ?></td> 
@@ -297,7 +254,7 @@ function book(class_id, title, date, start_time, end_time, status){
                     
 
                 </tr>
-
+                    <?php endif; ?>
                     <?php } ?>
 
 

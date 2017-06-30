@@ -99,6 +99,7 @@ class Broadcasts extends CI_Controller {
 			
 				$old_class_id= $this->input->post('class_id');
 				$old_title= $this->input->post('title');
+                $old_description = $this->input->post('description');
 				$old_date= $this->input->post('date');
 				$starttime= $this->input->post('starttime');
 				$endtime= $this->input->post('endtime');
@@ -110,6 +111,7 @@ class Broadcasts extends CI_Controller {
 				$newdata = array('task' => 'schedule',
 				'title' => $old_title,
 				'timezone' => $timezone,
+                'description' => $old_description,
 				'start_time' => $starttime,
 				'end_time' => $endtime,
 				'record' => 1,
@@ -145,6 +147,7 @@ class Broadcasts extends CI_Controller {
 					$newclass= array(
 						'class_id' => $new_class_id,
 						'title' => $old_title,
+                        'description' => $old_description,
 						'teacheremail' => $email,
 						'classdate' => $old_date,
 						'starttime' => $starttime,
@@ -325,6 +328,7 @@ else
 			
 			$data = array('task' => 'schedule',
 			'title' => $this->input->post('title'),
+            'description' => $this->input->post('description'),
 			'timezone' => $this->input->post('timezone'),
 			'start_time' => $start_time,
 			'end_time' => $end_time,
@@ -346,10 +350,11 @@ else
 			{
 				$class_id= $resultJson->class_id;			
 				$title = $this->input->post('title');
+                $description = $this->input->post('description');
 				$timezone = $this->input->post('timezone');
 				$date = $this->input->post('date');
-				$starttime= $this->input->post('start_time');
-				$endtime= $this->input->post('end_time');
+				$start_time= $this->input->post('start_time');
+				$end_time= $this->input->post('end_time');
 				$seat_attendees = $this->input->post('seat_attendees');
 				
 				$email = $this->session->userdata('username');
@@ -359,6 +364,7 @@ else
 				$class= array(
 					'class_id' => $class_id,
 					'title' => $title,
+                    'description' => $description,
 					'teacheremail' => $email,
 					'classdate' => $date,
 					'starttime' => $start_time,
@@ -514,7 +520,7 @@ else
 	public function sendHttpRequest($data)
 	{
 		$data['apikey'] = $this -> api_key;
-	        $data_string = http_build_query($data);
+        $data_string = http_build_query($data);
 	 	$this -> apiendpoint = $this -> apiendpoint;//."/".$data['task'];
 		$ch = curl_init($this -> apiendpoint);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");

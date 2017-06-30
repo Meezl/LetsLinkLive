@@ -78,7 +78,6 @@
                     <?php
 
                     if($countbookings==0)
-
                     {
 
                         echo "No bookings";
@@ -109,18 +108,7 @@
 
                       <th>End Time</th>
 
-                     
-                      
-
                     </tr>
-
-
-
-               
-
-
-
-                    
 
                     <?php  
 
@@ -142,15 +130,10 @@
 
             			$class_id = $row->class_id;
 
-            
-
-                        
 
                     ?>
-
-                
-
-                <tr>
+                <?php if($status == "Upcoming"): ?>
+                 <tr>
 
                     <td><?php echo $class_id; ?></td> 
 
@@ -161,16 +144,10 @@
                     <td><?php echo $start_time; ?></td>   
 
                     <td><?php echo $end_time; ?></td> 
+                 </tr>
+                <?php endif; ?>
 
-                    
-
-                                   
-
-                    
-
-                </tr>
-
-                    <?php } ?>
+                  <?php } ?>
 
 
 
